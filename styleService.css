@@ -1,10 +1,14 @@
 .main{
-    background-color: rgb(252, 229, 198);
+    background-color: #27003d;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     box-sizing: border-box;
     width: 60%;
     height: 70vh;
     padding: 2% 3%;
     border-radius: 3px;
+    max-width: 1500px;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .serviceSelect{
@@ -17,7 +21,6 @@
 }
 
 .menuSelect{
-    background-color: #ffd69f;
     width: 40%;
     height: 100%;
     display: flex;
@@ -26,9 +29,9 @@
     border: 2px solid #000;
     border-radius: 3px;
     cursor: pointer;
-    background: #ffd69f;
-    box-shadow:  6px 6px 12px #deba8a,
-                -6px -6px 12px #fff2b4;
+    background-color: #31014d;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: #f5f5f5;
 
 }
 
@@ -37,9 +40,159 @@
     font-weight: 700;
 }
 
-.trackMail{
-    background-color: rgb(255, 140, 0);
+h3{
+    margin-left: 1%;
+}
+
+/* Scroolbar */
+
+::-webkit-scrollbar { 
+    background-color: #31014d;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 8px;
+    background-color: #3d0192;
+}
+/* section docRegister */
+
+.sectDocRegister{
+    background-color: #31014d;
+    border-radius: 3px;
     width: 100%;
-    height: 90%;
-    margin-top: 1%;
+    /* height: 95%; */
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sectDocRegister .field{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.sectDocRegister fieldset{
+    border: #f5f5f5 2px solid;
+}
+
+.sectDocRegister .field label{
+    color: #f5f5f5;
+    font-size: 17px;
+}
+
+.sectDocRegister .field input, select{
+    width: 100%;
+    height: 95%;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.sectDocRegister .field textarea{
+    height: 300px;
+}
+
+.sectDocRegister .field input:focus{
+    border-radius: 16px;
+}
+
+.sectDocRegister .field select:focus{
+    border-radius: 16px;
+}
+
+.sectDocRegister .field textarea:focus{
+    border-radius: 16px;
+}
+
+.sectDocRegister .sandDoc{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+}
+/* section docTrack */
+
+.sectDocTrack{
+    background-color: #31014d;
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    padding: 1%;
+    overflow: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.sectDocTrack .field{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.sectDocTrack .field label, h3, legend, fieldset{
+    color: #f5f5f5;
+    font-size: 17px;
+}
+
+.sectDocTrack .field input, select, textarea{
+    width: 100%;
+    height: 95%;
+    padding: 15px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+.sectDocTrack .field input:focus{
+    border-radius: 16px;
+}
+
+.sectDocTrack .field select:focus{
+    border-radius: 16px;
+}
+
+.sectDocTrack .field textarea:focus{
+    border-radius: 16px;
+}
+
+.sectNone{
+    display: none;
+}
+
+/* buttons */
+button{
+    width: 90%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+    position: relative;
+    left: 5%;
+}
+button:hover{
+    background: #f5f5f5;
+    color: #101026;
+    border-radius: 16px;
 }

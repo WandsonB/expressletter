@@ -35,21 +35,138 @@
     <main class="main">
         <div class="serviceSelect">
             <div id="trackMenuSelect" class="menuSelect">
-                <p>Rastreamento / andamento</p>
+                <p>Acompanhe o andamento</p>
             </div>  <!-- serviceSelect -->
 
             <div id="sandMenuSelect" class="menuSelect">
-                <p>Escrever e enviar</p>
+                <p>Novo documento</p>
             </div>  <!-- serviceSelect -->
 
         </div> <!-- serviceSelect -->
 
-        <section class="trackMail">
-            <form action="" id="trackForm">
-                
-            
+        <section class="sectDocRegister sectNone">
+            <form action="" id="docRegister">
+                <h3>Destinatario</h3>
+                <fieldset>
+                    <legend>Dados de envio</legend>
+                    
+                    <div class="field">
+                        <label for="nome" class="inputRegister"> Destinatario: *</label>
+
+                        <input type="text" name="nome" required>
+                    </div> <!-- field -->
+
+                    <div class="field">
+                            <label for="endereco" class="inputRegister"> Endereço: *</label>
+
+                        <input type="text" name="endereco" required>
+                    </div> <!-- field -->
+
+                    <div class="field">
+                            <label for="cidade" class="inputRegister"> Cidade: *</label>
+
+                        <input type="text" name="cidade" required>
+                    </div> <!-- field -->
+
+
+                    <div class="field">
+                            <label for="bairro" class="inputRegister"> Bairro: *</label>
+
+                        <input type="text" name="bairro" required>
+                    </div> <!-- field -->
+
+                    <div class="field">
+                        <label for="complemento" class="inputRegister"> Complemento: *</label>
+
+                        <input type="text" name="complemento" required>
+                    </div> <!-- field -->
+
+
+                    <div class="field">
+                        <label for="estado" class="inputRegister"> Estado: *
+
+                        <select name="estado" required>
+                            <option value="df"></option>
+                            <option value="df">DF</option>
+                            <option value="df">DF</option>
+                            <option value="df">DF</option>
+                            <option value="df">DF</option>
+                            <option value="df">DF</option>
+                        </select>
+                    </div> <!-- field -->
+
+                    </label>
+                </fieldset>
+
+                <h3>Escreva seu documento</h3>
+
+                <fieldset>
+                    <legend>Documento</legend>
+
+                    <div class="field">
+                        <label for="Destinatario"> Destinatario:</label>
+
+                    <input type="text" name="Destinatario" >
+                    </div> <!-- field -->
+
+                    <div class="field">
+                        <label for="assunto"> Assunto:</label>
+
+                        <input type="text" name="assunto" >
+                    </div> <!-- field -->
+
+                    <div class="field">
+                        <label for="docWritten">Mensagem</label>
+
+                        <textarea name="docWritten" id="docWritten" placeholder="Escreva seu documento"></textarea>
+                    </div> <!-- field -->
+                    <button type="submit" class>Enviar</button>
+                </fieldset>
             </form>
+
+            <form action="" id="docDirectSand">
+                <h3>ou envie o documento</h3>
+
+                <fieldset>
+                    <legend>Envie o documento</legend>
+                    <div class="sandDoc">
+                        <input type="file" name="docFile" id="docFile">
+                    </div>
+                    <button type="submit" class>Enviar</button>
+                </fieldset>
+            </form>
+            
+
         </section><!-- trackMail -->
+
+        <section class="sectDocTrack">
+            <form action="" id="docTrackInfo">
+                <fieldset>
+                    <legend>Rastreio</legend>
+                    <h3>Acompanhe seu pedido com:</h3>
+    
+                    <div class="field">
+                        <label for="cpfTrack">Seu CPF:</label>
+    
+                        <input type="text" name="assunto" placeholder="Escreva seu CPF">
+                    </div> <!-- field -->
+                    
+                
+                    <h3>ou</h3>
+    
+                    <div class="field">
+                        <label for="codTrack">Código de rastreio:</label>
+    
+                        <input type="text" name="codTrack" placeholder="Escreva seu código">
+                    </div> <!-- field -->
+
+                    <div class="btnDiv">
+                        <button type="submit" class>Rastrear</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+        </section>
     </main>
 
 
